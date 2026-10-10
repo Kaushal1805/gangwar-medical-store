@@ -42,10 +42,10 @@ export default function AboutUs() {
               Your Health is Our Responsibility & Passion
             </h2>
             <p className="text-base text-gray-600 dark:text-gray-300 mb-6 leading-relaxed font-medium">
-              Gangwar Medical Store is committed to providing genuine medicines and healthcare products with trust and professionalism. Managed by **Drx. Sunil Kumar (B.Pharm)**, our pharmacy focuses on customer care, quality control, and clinical pharmaceutical guidance.
+              Gangwar Medical Store is committed to providing genuine medicines and healthcare essentials with trust, care and professionalism. Managed by <strong className="font-bold text-brand-gray-dark dark:text-white">Drx. Sunil Kumar (B.Pharm)</strong>, we focus on dependable service, quality checks and responsible pharmacy guidance.
             </p>
             <p className="text-base text-gray-600 dark:text-gray-300 mb-8 leading-relaxed font-medium">
-              Our ultimate goal is to ensure better health and complete customer satisfaction in Bilaspur. We act as a reliable gateway between doctor prescriptions and patient healing, ensuring that you receive the exact brand, safe guidelines, and professional customer service every time you visit.
+              Located in Rajghat, Aurangabad, our team helps customers find prescribed medicines, daily-care products and practical information on availability. We aim to make every visit clear, respectful and convenient.
             </p>
 
             {/* Managed Box Card */}

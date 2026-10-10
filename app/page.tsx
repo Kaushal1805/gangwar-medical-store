@@ -5,6 +5,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import AboutUs from "@/components/AboutUs";
 import Services from "@/components/Services";
 import Categories from "@/components/Categories";
+import MedicineList from "@/components/MedicineList";
 import Brands from "@/components/Brands";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
@@ -26,6 +27,7 @@ export default function Home() {
         <AboutUs />
         <Services />
         <Categories />
+        <MedicineList />
         <Brands />
         <Gallery />
         <Testimonials />

@@ -23,47 +23,39 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Gangwar Medical Store | Genuine Medicines & Healthcare Guidance",
-  description: "Trusted local pharmacy in Nawabganj, Bareilly managed by Drx. Sunil Kumar (B.Pharm). Get authentic prescription medicines, health supplements, daily care, and expert advice.",
+  title: {
+    default: "Gangwar Medical Store | Pharmacy in Rajghat, Aurangabad",
+    template: "%s | Gangwar Medical Store",
+  },
+  description: "Gangwar Medical Store in Rajghat, Aurangabad offers genuine medicines, healthcare essentials and pharmacist guidance. Find us at GJ75+JMP, Uttar Pradesh 262406.",
+  applicationName: "Gangwar Medical Store",
+  category: "Pharmacy",
   keywords: [
     "Gangwar Medical Store",
-    "Best Medical Store in Nawabganj",
-    "Pharmacy Near Me",
-    "Medical Store Near Me",
-    "Genuine Medicines",
-    "Healthcare Products",
-    "B.Pharm Pharmacist",
-    "Prescription Medicines",
-    "Medical Shop in Bareilly",
-    "Drx. Sunil Kumar Pharmacist",
+    "medical store in Rajghat",
+    "pharmacy in Aurangabad Uttar Pradesh",
+    "medical store near Rajghat",
+    "genuine medicines in Aurangabad",
+    "healthcare products in Rajghat",
     "Gangwar Pharmacy"
   ],
   authors: [{ name: "Drx. Sunil Kumar (B.Pharm)" }],
-  metadataBase: new URL("https://gangwarmedicalstore.com"), // Fallback base URL for canonicals
+  metadataBase: new URL("https://gangwarmedical.shop"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Gangwar Medical Store | Genuine Medicines & Healthcare Guidance",
-    description: "Trusted local pharmacy in Nawabganj, Bareilly managed by Drx. Sunil Kumar (B.Pharm). Authentic medicines, supplements, baby care, and surgical items.",
-    url: "https://gangwarmedicalstore.com",
+    title: "Gangwar Medical Store | Pharmacy in Rajghat, Aurangabad",
+    description: "Genuine medicines, healthcare essentials and pharmacist guidance in Rajghat, Aurangabad.",
+    url: "https://gangwarmedical.shop",
     siteName: "Gangwar Medical Store",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Gangwar Medical Store - Managed by Drx. Sunil Kumar (B.Pharm)",
-      },
-    ],
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Gangwar Medical Store | Genuine Medicines & Healthcare",
-    description: "Trusted pharmacy in Nawabganj, Bareilly managed by Drx. Sunil Kumar (B.Pharm). Authentic products and pharmacist guidance.",
-    images: ["/og-image.jpg"],
+    description: "Genuine medicines and healthcare essentials in Rajghat, Aurangabad.",
   },
   robots: {
     index: true,
@@ -87,26 +79,21 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Pharmacy",
-    "@id": "https://gangwarmedicalstore.com/#pharmacy",
+    "@id": "https://gangwarmedical.shop/#pharmacy",
     "name": "Gangwar Medical Store",
     "alternateName": "Gangwar Pharmacy",
-    "image": "https://gangwarmedicalstore.com/store-front.jpg",
-    "url": "https://gangwarmedicalstore.com",
+    "image": "https://gangwarmedical.shop/gangwar-storefront.jpeg",
+    "url": "https://gangwarmedical.shop",
     "telephone": "+918394894546",
     "email": "sunilgangwar4326@gmail.com",
     "priceRange": "$$",
+    "hasMap": "https://maps.app.goo.gl/WnBzQakgzkuJnN9j6?g_st=aw",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Rajghat, Aurangabaad, Nawabganj",
-      "addressLocality": "Bareilly",
+      "streetAddress": "GJ75+JMP, Rajghat, Aurangabad",
       "addressRegion": "Uttar Pradesh",
-      "postalCode": "262401",
+      "postalCode": "262406",
       "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 28.5400,
-      "longitude": 79.6330
     },
     "openingHoursSpecification": [
       {
@@ -129,6 +116,11 @@ export default function RootLayout({
       "name": "Drx. Sunil Kumar",
       "jobTitle": "Qualified Pharmacist",
       "description": "B.Pharm Qualified Pharmacist managing Gangwar Medical Store"
+    },
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "Pharmacy Registration Number",
+      "value": "200323/0070901"
     },
     "sameAs": [
       "https://wa.me/918394894546"

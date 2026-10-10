@@ -1,6 +1,6 @@
 "use client";
 
-import { Activity, Phone, Mail, MapPin, Heart } from "lucide-react";
+import { Activity, Phone, Mail, MapPin, Heart, BadgeCheck } from "lucide-react";
 
 export default function Footer() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -88,7 +88,7 @@ export default function Footer() {
               <li className="flex gap-3">
                 <MapPin className="h-5 w-5 text-brand-green shrink-0 mt-0.5" />
                 <span className="leading-relaxed">
-                  Rajghat, Aurangabaad, Nawabganj, Bareilly, Uttar Pradesh - 262401
+                  GJ75+JMP, Rajghat, Aurangabad, Uttar Pradesh - 262406
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -102,6 +102,12 @@ export default function Footer() {
                 <a href="mailto:sunilgangwar4326@gmail.com" className="hover:text-brand-green transition-colors">
                   sunilgangwar4326@gmail.com
                 </a>
+              </li>
+              <li className="flex items-center gap-3 rounded-xl bg-brand-green/5 px-3 py-2.5 text-brand-gray-dark dark:text-white">
+                <BadgeCheck className="h-5 w-5 text-brand-green shrink-0" />
+                <span>
+                  Registration No. <span className="font-mono">200323/0070901</span>
+                </span>
               </li>
             </ul>
           </div>

@@ -16,25 +16,24 @@ function AnimatedCounter({ value, suffix = "", duration = 1.5 }: CounterProps) {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   useEffect(() => {
-    if (isInView) {
-      let start = 0;
-      const end = value;
-      if (start === end) return;
+    if (!isInView) return;
 
-      const totalMiliseconds = duration * 1000;
-      const incrementTime = Math.max(Math.floor(totalMiliseconds / end), 20);
-      
-      const timer = setInterval(() => {
-        start += 1;
-        setCount(start);
-        if (start >= end) {
-          clearInterval(timer);
-          setCount(end);
-        }
-      }, incrementTime);
+    let animationFrame = 0;
+    let startedAt: number | null = null;
+    const totalMilliseconds = duration * 1000;
 
-      return () => clearInterval(timer);
-    }
+    const animate = (timestamp: number) => {
+      if (startedAt === null) startedAt = timestamp;
+      const progress = Math.min((timestamp - startedAt) / totalMilliseconds, 1);
+      setCount(Math.round(value * progress));
+
+      if (progress < 1) {
+        animationFrame = requestAnimationFrame(animate);
+      }
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationFrame);
   }, [isInView, value, duration]);
 
   return (

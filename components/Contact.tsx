@@ -94,12 +94,11 @@ export default function Contact() {
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed font-medium">
                     Gangwar Medical Store<br />
-                    Rajghat, Aurangabaad, Nawabganj,<br />
-                    Bareilly,<br />
-                    Uttar Pradesh - 262401
+                    GJ75+JMP, Rajghat, Aurangabad,<br />
+                    Uttar Pradesh - 262406
                   </p>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=Gangwar+Medical+Store+Rajghat+Aurangabad+Nawabganj+Bareilly+262401"
+                    href="https://maps.app.goo.gl/WnBzQakgzkuJnN9j6?g_st=aw"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-green hover:text-brand-green-dark mt-4 transition-colors group"
@@ -248,7 +247,7 @@ export default function Contact() {
             <div className="relative overflow-hidden rounded-3xl border border-gray-150 dark:border-slate-800 shadow-lg min-h-[350px] md:min-h-0 bg-gray-100 dark:bg-slate-850">
               <iframe
                 title="Gangwar Medical Store Google Maps Location"
-                src="https://maps.google.com/maps?q=Rajghat,%20Aurangabad,%20Nawabganj,%20Bareilly,%20262401&z=16&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=GJ75%2BJMP%20Gangwar%20Medical%20Store%2C%20Rajghat%2C%20Aurangabad%2C%20Uttar%20Pradesh%20262406&z=17&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 className="border-0 absolute inset-0"
@@ -263,7 +262,7 @@ export default function Contact() {
                   <span className="text-xs font-bold text-brand-gray-dark dark:text-white leading-tight">Gangwar Medical Store</span>
                 </div>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Gangwar+Medical+Store+Rajghat+Aurangabad+Nawabganj+Bareilly+262401"
+                  href="https://maps.app.goo.gl/WnBzQakgzkuJnN9j6?g_st=aw"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-brand-green hover:bg-brand-green-dark text-white text-[10px] font-bold py-1.5 px-3 rounded-lg shadow-md"

@@ -144,8 +144,8 @@ export default function Hero() {
             
             <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-white dark:border-slate-800 aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3]">
               <Image
-                src="/pharmacy_hero.png"
-                alt="Gangwar Medical Store Premium Pharmacy Interior"
+                src="/gangwar-interior.jpeg"
+                alt="Inside Gangwar Medical Store"
                 fill
                 priority
                 className="object-cover hover:scale-105 transition-transform duration-700"
